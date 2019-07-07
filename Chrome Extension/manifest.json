@@ -1,0 +1,21 @@
+{
+	"manifest_version" : 2,
+	"name": "Linkable",
+	"version" : "0.1",
+	"description" : "Linking Goolge docs with a code editor",
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"input",
+		"tabs",
+		"activeTab",
+		"contextMenus",
+		"<all_urls>"
+	],
+	"background": {
+		"persistent": true,
+		"scripts": ["background.js"]
+
+	}
+}

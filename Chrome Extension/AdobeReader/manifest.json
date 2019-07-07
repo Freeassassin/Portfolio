@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Moodle Check",
+  "description": " An Extension To Check The Moodle ",
+  "version": "1.0",
+
+  "icons": {
+    "48": "Logo.JPG"
+  },
+
+  "permissions": [
+    "tabs", "<all_urls>"
+  ],
+
+  "browser_action": {
+    "default_icon": "Logo.JPG",
+    "default_popup": ""
+  },
+
+   "content_scripts": [ {
+        "all_frames": true,
+        "js": [ "code/refresh.js" ],
+        "matches": [ "*://*/*/*", "<all_urls>"],
+		"run_at": "document_end"
+    } ]
+  
+}
